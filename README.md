@@ -4,6 +4,12 @@ Aplikasi berbasis Streamlit yang berfungsi sebagai *Interactive Image Processing
 
 Pengguna dapat mengunggah gambar dan menyesuaikan parameter *real-time* untuk setiap teknik.
 
+## 🚀 Coba Aplikasinya Sekarang!
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vehicle-image-processing.streamlit.app/)
+
+Klik *badge* di atas untuk mengakses aplikasi secara langsung dan menguji berbagai teknik *Image Processing* pada citra kendaraan Anda.
+
 ## 🛠️ Teknik yang Diimplementasikan
 
 Proyek ini mengimplementasikan sebuah *pipeline* berjenjang (step-by-step) melalui tab yang terpisah, meliputi:
