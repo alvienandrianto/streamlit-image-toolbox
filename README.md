@@ -6,7 +6,11 @@ Pengguna dapat mengunggah gambar dan menyesuaikan parameter *real-time* untuk se
 
 ## 🚀 Coba Aplikasinya Sekarang!
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vehicle-image-processing.streamlit.app/)
+<a href="https://vehicle-image-processing.streamlit.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Launch%20App-Streamlit%20Cloud-red?style=for-the-badge&logo=streamlit" alt="Launch Streamlit App" style="width:250px; height:50px;">
+</a>
+
+### **[vehicle-image-processing.streamlit.app](https://vehicle-image-processing.streamlit.app/)**
 
 Klik *badge* di atas untuk mengakses aplikasi secara langsung dan menguji berbagai teknik *Image Processing* pada citra kendaraan Anda.
 
@@ -25,7 +29,7 @@ Proyek ini mengimplementasikan sebuah *pipeline* berjenjang (step-by-step) melal
 
 ## 🚀 Instalasi dan Menjalankan Aplikasi
 
-Aplikasi ini memerlukan Python 3.10+ (disarankan menggunakan **venv**).
+Aplikasi ini memerlukan Python 3.12 (disarankan menggunakan **venv**).
 
 1.  **Clone Repository:**
     ```bash
