@@ -1,20 +1,46 @@
-# 🚗 Vehicle Image Analysis Toolbox (UAS Image Processing)
+# 🚗 Interactive Image Processing Demo (Vehicle Analysis)
 
-Proyek ini adalah implementasi Streamlit yang berfokus pada 6 teknik Image Processing untuk melakukan *enhancement* dan *feature extraction* pada citra kendaraan. Proyek ini dikembangkan untuk memenuhi tugas UAS Mata Kuliah Pengolahan Citra Digital.
+Aplikasi berbasis Streamlit yang berfungsi sebagai *Interactive Image Processing Toolbox*. Proyek ini mendemonstrasikan 6 teknik fundamental dalam Pengolahan Citra Digital untuk meningkatkan kualitas (enhancement) dan mengekstrak fitur (feature extraction) dari citra, khususnya pada konteks **analisis citra kendaraan**.
 
-## 🛠️ Teknik yang Diimplementasikan:
+Pengguna dapat mengunggah gambar dan menyesuaikan parameter *real-time* untuk setiap teknik.
 
-1. **Histogram Equalization:** Untuk mengatasi low-light/high-contrast.
-2. **Noise Filtering (Gaussian/Median):** Untuk membersihkan citra sebelum deteksi tepi.
-3. **Sharpening:** Untuk menajamkan detail kendaraan yang kabur.
-4. **Edge Detection (Canny/Sobel):** Untuk mengekstrak *outline* kendaraan.
-5. **Morphological Operations:** Untuk merapikan hasil tepi/mask.
-6. **Geometric Transformations:** Untuk normalisasi posisi (rotasi/scaling).
+## 🛠️ Teknik yang Diimplementasikan
 
-## 🚀 Cara Menjalankan Lokal
+Proyek ini mengimplementasikan sebuah *pipeline* berjenjang (step-by-step) melalui tab yang terpisah, meliputi:
 
-1. Pastikan Python 3 terinstal.
-2. Clone repository ini:
-   ```bash
-   git clone [https://www.andarepository.com/](https://www.andarepository.com/)
-   cd nama_proyek_uas
+| No. | Teknik | Tujuan Fungsional |
+| :--- | :--- | :--- |
+| **1.** | **Histogram Equalization** | Normalisasi kontras; mengatasi foto **under/over-exposed**. |
+| **2.** | **Noise Filtering** | Membersihkan **noise** (butiran acak) agar tepi lebih stabil. |
+| **3.** | **Sharpening** | Meningkatkan **ketajaman** dan menonjolkan detail kendaraan yang kabur. |
+| **4.** | **Edge Detection** | Ekstraksi **outline** (tepi) kendaraan yang jelas (Canny/Sobel). |
+| **5.** | **Morphological Ops** | Merapikan hasil tepi/mask (Closing/Opening) untuk kontur yang **solid**. |
+| **6.** | **Geometric Transform** | **Normalisasi** orientasi gambar (Rotasi/Scaling) sebelum pemrosesan AI. |
+
+## 🚀 Instalasi dan Menjalankan Aplikasi
+
+Aplikasi ini memerlukan Python 3.10+ (disarankan menggunakan **venv**).
+
+1.  **Clone Repository:**
+    ```bash
+    git clone [https://github.com/YourUsername/image-processing-interactive-demo.git](https://github.com/YourUsername/image-processing-interactive-demo.git)
+    cd image-processing-interactive-demo
+    ```
+
+2.  **Setup Virtual Environment (Disarankan):**
+    ```bash
+    # Ganti 'python3.12' sesuai versi yang Anda gunakan
+    python3.12 -m venv .venv 
+    source .venv/bin/activate  # atau .\ .venv\Scripts\activate di Windows
+    ```
+
+3.  **Instal Dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Jalankan Streamlit:**
+    ```bash
+    streamlit run app.py
+    ```
+    Buka URL yang muncul di browser Anda (biasanya `http://localhost:8501`).
